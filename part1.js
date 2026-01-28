@@ -33,17 +33,36 @@
 
 //<<<<<<----------CONDITIONAL STATMENT------>>>>>
 
-console.log("before my if statrment");
-let age=18
-if(age>20){
-    console.log("you can vote");
+// console.log("before my if statrment");
+// let age=18
+// if(age>20){
+//     console.log("you can vote");
     
-}
-let firstName="surbhi"
-if(firstName=="surbhi"){
-    console.log(`wellcome ${firstName}`);
+// }
+// let firstName="surbhi"
+// if(firstName=="surbhi"){
+//     console.log(`wellcome ${firstName}`);
     
-}
+// }
 
-console.log("after if statement");
+// console.log("after if statement");
+
+
+let marks=56
+if(marks>77){
+    console.log("A");
+    
+}else if(marks>=60){
+    console.log("B");
+    
+}else if(marks>=50){
+    console.log("C");
+    
+}else if(marks>=33){
+    console.log("D");
+    
+}else if(marks <33){
+    console.log("F");
+    
+}
 
