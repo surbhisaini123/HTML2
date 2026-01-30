@@ -48,22 +48,37 @@
 // console.log("after if statement");
 
 
-let marks=56
-if(marks>77){
-    console.log("A");
+// let marks=56
+// if(marks>77){
+//     console.log("A");
     
-}else if(marks>=60){
-    console.log("B");
+// }else if(marks>=60){
+//     console.log("B");
     
-}else if(marks>=50){
-    console.log("C");
+// }else if(marks>=50){
+//     console.log("C");
     
-}else if(marks>=33){
-    console.log("D");
+// }else if(marks>=33){
+//     console.log("D");
     
-}else if(marks <33){
-    console.log("F");
+// }else if(marks <33){
+//     console.log("F");
     
+// }
+// t
+
+
+
+// <<<<<<<<<<<<<<<-------PRACTICE PROBLEM----------->>>>>>>.
+
+let size='M'
+if(size=='xl'){
+    console.log("rs250");
+
+}else if(size=='l'){
+    print("200")
+}else if(size=='M'){
+    print("100")
+}else if(size=='S'){
+    print("50")
 }
-//
-// aagit
