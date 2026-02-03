@@ -140,10 +140,10 @@
 // }
 
 // QUESTION4
-let num1=34
-let num2=4674
-if(num1%10==num2%10){
-    console.log(num1%10)
-}else{
-    console.log("no mmatch")
-}
+// let num1=34
+// let num2=4674
+// if(num1%10==num2%10){
+//     console.log(num1%10)
+// }else{
+//     console.log("no mmatch")
+// }
