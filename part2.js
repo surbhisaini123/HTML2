@@ -72,3 +72,34 @@
 // let emptyarr=[]  //emptyarray
 
 // <<<<-------ARRAY ARE MUTABLE----->>>>>
+
+// let arr=["xyz","abc","pqr"]
+// console.log(arr)
+// console.log(arr[2])
+// arr[1]="CCC"
+// console.log(arr)
+
+// <<<<<<<-------ARRAY METHOD--------->>>>>>
+// push pop method are use
+// let fruit=["apple","mango","grapes"]
+// console.log(fruit)
+// console.log(fruit.push("orange"))
+// console.log(fruit)
+// console.log(fruit.pop())
+// console.log(fruit)
+// console.log(fruit.unshift("pineapple"))
+// console.log(fruit)
+// console.log(fruit.shift())
+// console.log(fruit)
+
+// <<<<----PRACTICE QUESTION----->>>>>
+
+let month=["january","july","march","august"]
+month.shift()
+month.shift()
+console.log(month)
+month.unshift("june")
+month.unshift("july")
+
+console.log(month)
+
