@@ -118,8 +118,20 @@
 // console.log(veg.reverse())
 
 // <<<<<<----------SLICE METHOD-------->>>>>>>>
-let color=["white","red","blue","green"]
-console.log(color.slice())
-console.log(color.slice(2))
-console.log(color.slice(1,3))
-console.log(color.slice(-2))
+// let color=["white","red","blue","green"]
+// console.log(color.slice())
+// console.log(color.slice(2))
+// console.log(color.slice(1,3))
+// console.log(color.slice(-2))
+
+// <<<<<<<<<------splice method--->>>>
+
+let fruit=["apple","mango","grapes","orange","pineapple","watermelon"]  
+console.log(fruit.splice(4))
+console.log(fruit)
+console.log(fruit.splice(0,2))
+console.log(fruit)
+console.log(fruit.splice(1,0,"watermelon","pineapple"))
+console.log(fruit)
+console.log(fruit.splice(2,1,"lemon"))
+console.log(fruit)
