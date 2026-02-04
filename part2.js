@@ -92,14 +92,34 @@
 // console.log(fruit.shift())
 // console.log(fruit)
 
-// <<<<----PRACTICE QUESTION----->>>>>
+// // <<<<----PRACTICE QUESTION----->>>>>
 
-let month=["january","july","march","august"]
-month.shift()
-month.shift()
-console.log(month)
-month.unshift("june")
-month.unshift("july")
+// let month=["january","july","march","august"]
+// month.shift()
+// month.shift()
+// console.log(month)
+// month.unshift("june")
+// month.unshift("july")
+// console.log(month)
 
-console.log(month)
+//<<<<--------INDEXOF AND INCLUDES-------->>>>>
+// let fruit=["apple","mango","grapes"]  
+// // console.log(fruit.indexOf("Mango"))
+// console.log(fruit.includes("applee"))
 
+// <<<<<<<-------CONCATINATION AND REVERSE---------->>>>>
+// let fruit=["apple","mango","grapes"]  
+// let veg=["potato","onion","peas"]
+// let concatination=fruit.concat(veg)
+// console.log(concatination)
+
+// console.log(veg.reverse())
+// console.log(veg)
+// console.log(veg.reverse())
+
+// <<<<<<----------SLICE METHOD-------->>>>>>>>
+let color=["white","red","blue","green"]
+console.log(color.slice())
+console.log(color.slice(2))
+console.log(color.slice(1,3))
+console.log(color.slice(-2))
