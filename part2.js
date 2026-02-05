@@ -126,12 +126,29 @@
 
 // <<<<<<<<<------splice method--->>>>
 
-let fruit=["apple","mango","grapes","orange","pineapple","watermelon"]  
-console.log(fruit.splice(4))
-console.log(fruit)
-console.log(fruit.splice(0,2))
-console.log(fruit)
-console.log(fruit.splice(1,0,"watermelon","pineapple"))
-console.log(fruit)
-console.log(fruit.splice(2,1,"lemon"))
-console.log(fruit)
+// let fruit=["apple","mango","grapes","orange","pineapple","watermelon"]  
+// console.log(fruit.splice(4))
+// console.log(fruit)
+// console.log(fruit.splice(0,2))
+// console.log(fruit)
+// console.log(fruit.splice(1,0,"watermelon","pineapple"))
+// console.log(fruit)
+// console.log(fruit.splice(2,1,"lemon"))
+// console.log(fruit)
+
+//<<<<<<------------ARRAY SORT--------------->>>>>>>
+// let char=["k","u","r","a","e","l"]
+// console.log(char.sort())
+// let num=["10","5","3","11","3"]
+// console.log(num.sort())
+// <<<<<<-------PRACTICE QUESTION 
+// 1)
+// let month=["january","july","march","august"]
+// console.log(month.splice(0,1))
+// console.log(month)
+// console.log(month.splice(1,0,"june"))
+// console.log(month)
+
+let language=["C","C++","HTML","JS","PYTHON","JAVA","C#","SQL"]
+console.log(language.reverse())
+console.log(language.indexOf("JS"))
