@@ -141,7 +141,7 @@
 // console.log(char.sort())
 // let num=["10","5","3","11","3"]
 // console.log(num.sort())
-// <<<<<<-------PRACTICE QUESTION 
+// <<<<<<-------PRACTICE QUESTION ------------->>>>>>>>
 // 1)
 // let month=["january","july","march","august"]
 // console.log(month.splice(0,1))
@@ -149,6 +149,36 @@
 // console.log(month.splice(1,0,"june"))
 // console.log(month)
 
-let language=["C","C++","HTML","JS","PYTHON","JAVA","C#","SQL"]
-console.log(language.reverse())
-console.log(language.indexOf("JS"))
+// let language=["C","C++","HTML","JS","PYTHON","JAVA","C#","SQL"]
+// console.log(language.reverse())
+// console.log(language.indexOf("JS"))
+
+// <<<<<<<<----------CONSTANT ARRAY------------->>>>>>>>>>
+
+// const a=7
+// // console.log(a)
+// // console.log(a=4)
+
+// const arr=["1","2",'3',"4"]
+// console.log(arr)
+// arr.push(7)
+// console.log(arr)
+// arr.pop()
+// console.log(arr)
+// arr=['1',"2","4"]
+// console.log(arr)
+
+// <<<<<<<<<<<<-------NESTED ARRAY----------->>>>>>>>
+
+// let nums=[["1","2"],['3','4'],['6','5']]
+// console.log(nums)
+// console.log(nums[0])
+// console.log(nums[0][1])
+// console.log(nums.length)
+
+// <<<<<<<<---------PARCTICE QUESTION------>>>>>>>
+// TIC TAC TOC GAME
+let game=[['X',null,'O'],[null,'X',null],['O',null,'X']]
+console.log(game)
+game[0][1]='O'
+console.log(game)
