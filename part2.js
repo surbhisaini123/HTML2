@@ -178,7 +178,36 @@
 
 // <<<<<<<<---------PARCTICE QUESTION------>>>>>>>
 // TIC TAC TOC GAME
-let game=[['X',null,'O'],[null,'X',null],['O',null,'X']]
-console.log(game)
-game[0][1]='O'
-console.log(game)
+// let game=[['X',null,'O'],[null,'X',null],['O',null,'X']]
+// console.log(game)
+// game[0][1]='O'
+// console.log(game)
+
+// <<<<<<<--------PRACTICE QUESTION
+
+// let arr=[7,9,0,-2]
+// console.log(arr)
+// console.log(arr.slice(0,3))
+// console.log(arr.slice(1))
+
+// let str=''
+// if(str==0){
+//     console.log("string is blank")
+// }else{
+//     console.log("string is not blank")
+// }
+
+// let arr=[1,2,3,5]
+// if(arr.indexOf(5)!= -1){
+//     console.log("exist")
+// }else{
+//     console.log("not")
+// }
+
+let str='surBhI'
+let idex=3
+if(str[idex]==str[idex].toLowerCase()){
+    console.log("yes it is lowercase")
+}else{
+    console.log("it is upper case")
+}
