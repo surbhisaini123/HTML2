@@ -82,10 +82,36 @@
 // }
 
 // <<<<<<<<<<----------LOOP WITH ARRAY------>>>>>>>>>>
-let fruit=["apple","mango","banana","litch","orange"]
-// for(let i=0;i<fruit.length;i++){
+// let fruit=["apple","mango","banana","litch","orange"]
+// // for(let i=0;i<fruit.length;i++){
+// //     console.log(i,fruit[i])
+// // }
+// for(let i=fruit.length-1;i>=0;i--){
 //     console.log(i,fruit[i])
 // }
-for(let i=fruit.length-1;i>=0;i--){
-    console.log(i,fruit[i])
+
+// let student=[["xyz",98],["abc",87,"cde"],["pqr",96]]
+// // console.log(student)//
+// for(let i=0;i<student.length;i++){
+//     console.log(`info of #${1}`)
+//     for(let j=0;j<student[i].length;j++){
+//         console.log(`j=${j},${student[i][j]}`)
+//         // console.log(student[i][j])
+//     }
+// }
+
+// <,<<<<<<<<---------FOR-OF LOOP-----------.>>>>>>>>
+// let  fruits=["apple","mango","banana","litch","orange"]
+// for(fruit of fruits){
+//     console.log(fruit)
+// }
+// for(name of "surbhi"){
+//     console.log(name)
+// }
+// <<<<<<<<-----------NESTED FOR-OF LOOP---->>>>>
+let student=[["xyz",98],["abc",87,"cde"],["pqr",96]]
+for(info of student){
+    for(details of info){
+        console.log(details)
+    }
 }
