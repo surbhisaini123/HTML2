@@ -204,10 +204,10 @@
 //     console.log("not")
 // }
 
-let str='surBhI'
-let idex=3
-if(str[idex]==str[idex].toLowerCase()){
-    console.log("yes it is lowercase")
-}else{
-    console.log("it is upper case")
-}
+// let str='surBhI'
+// let idex=3
+// if(str[idex]==str[idex].toLowerCase()){
+//     console.log("yes it is lowercase")
+// }else{
+//     console.log("it is upper case")
+// }
