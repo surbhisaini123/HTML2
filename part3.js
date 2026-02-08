@@ -109,9 +109,72 @@
 //     console.log(name)
 // }
 // <<<<<<<<-----------NESTED FOR-OF LOOP---->>>>>
-let student=[["xyz",98],["abc",87,"cde"],["pqr",96]]
-for(info of student){
-    for(details of info){
-        console.log(details)
-    }
+// let student=[["xyz",98],["abc",87,"cde"],["pqr",96]]
+// for(info of student){
+//     for(details of info){
+//         console.log(details)
+//     }
+// }
+
+//<<<<<<<<<-----------TO-DO LIST APP------------->>>>>.>
+
+// let todo=[]
+// let req=prompt("pls enter your request")
+// // console.log(req)/
+// while(req!="quit"){
+//     if(req == "quit"){
+//         console.log("quiting app")
+//         break
+//     }
+//     if(req=="list"){
+//         console.log("-----------")
+//         for( let i=0;i<todo.length;i++){
+//             console.log(i,todo[i])
+//         }
+//      console.log("-----------")
+//     }else if(req=="add"){
+//         let task=prompt("please enter the task you want to add")
+//         todo.push(task)
+//         console.log("task added")
+//     }else if(req=="delete"){
+//         let idx=prompt("enter the task index")
+//         todo.splice(idx,1)
+//         console.log("task deleted")
+//     }else{
+//         console.log("wrong request")
+//     }
+//      req=prompt("pls enetr your request")
+// }
+// <<<<<<<<<--------PRACTICE QUESTION------->>>>>
+// let arr=[1,2,3,4,5,6,2,3]
+// let num=2
+// for(let i=0;i<arr.length;i++){
+//     if(num==arr[i]){
+//         let A=arr.splice(i,1)
+//         console.log(A)
+//     }
+   
+// }
+// console.log(arr)
+
+let n=287152
+let A =n.toString()
+// let count=A.length
+// console.log(count)
+// let count=0
+// while(n!=0){
+//     n=n/10
+//     count++
+
+
+// }
+let sum=0
+for(let i=0;i<A.length;i++){
+    sum+=Number[i]
+
 }
+
+console.log(sum)
+// let S =sum+A
+// console.log(S)
+
