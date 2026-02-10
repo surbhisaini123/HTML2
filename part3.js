@@ -157,8 +157,8 @@
 // }
 // console.log(arr)
 
-let n=287152
-let A =n.toString()
+// let n=287152
+// let A =n.toString()
 // let count=A.length
 // console.log(count)
 // let count=0
@@ -168,13 +168,14 @@ let A =n.toString()
 
 
 // }
-let sum=0
-for(let i=0;i<A.length;i++){
-    sum+=Number[i]
+// let sum=0
 
-}
+// for(let i=0;i<A.length;i++){
+//     sum+=Number[i]
 
-console.log(sum)
+// }
+
+// console.log(sum)
 // let S =sum+A
 // console.log(S)
 
