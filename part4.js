@@ -102,13 +102,13 @@
 // console.log(car.name)
 
 //Q3)
-let person={
-    name:"shobit",
-    age:23,
-    city:"japan"
-};
-console.log(person)
-console.log(person.city="new york")
-console.log(person)
-console.log(person.country="us")
-console.log(person)
+// let person={
+//     name:"shobit",
+//     age:23,
+//     city:"japan"
+// };
+// console.log(person)
+// console.log(person.city="new york")
+// console.log(person)
+// console.log(person.country="us")
+// console.log(person)
