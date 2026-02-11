@@ -52,11 +52,78 @@
 
 // console.log(sum(sum(2,3),3))
 // -----SCOPE-------..
-   let sum=33 //global
+//    let sum=33 //global
 
-function calSum(a,b){
-    // let sum=a+b/
-    console.log(sum)
+// function calSum(a,b){
+//     // let sum=a+b/         function scope
+//     console.log(sum)
+// }
+// calSum(2,3)
+// console.log(sum)
+
+// <<<<<<<<<<<-------BLOCK SCOPE---------->>>>>>>>>>
+// {
+//     let a=9
+
+// }
+// console.log(a)
+// <<<<<<<<<<<<<--------LEXICAL SCOPE -------->>>>>>>>>>>>
+// function outerFunc(){
+//     let x=7
+//     let y=5
+//     function innerFunc(){
+//         let a=9
+//         console.log(x)
+//         console.log(y)
+//     }
+//     innerFunc()
+//     console.log(x)
+//     console.log(a)
+// }
+// // outerFunc()
+// innerFunc()
+
+// <<<<<<<--------PRACTICE QUESTION------>>>>>>>>>
+// let greet="hello" //global scope
+// function outergreet(){
+//     let greet="namaste"  //function scope
+//     console.log(greet)
+//     function innergreet(){
+//         console.log(greet) //lexical scope 
+//     }
+//     innergreet()
+// }
+// console.log(greet)
+// outergreet()
+// <<<<<<<<<<<-----------FUNCTION EXPRESION ----------->>>>>>>>>>>>
+
+// let sum=function(a,b){
+//     return a+b
+// }
+// console.log(sum(2,3))
+
+// <<<<<<<<<<<<----------HIGHER ORDER FUNCTION && RETURN----------->>>>>>
+// function multipleGreet(func,count){  //higer order function
+//     for(let i=1;i<=count;i++){
+//         func()
+//     }
+// }
+// let greet=function (){
+//     console.log("hello")
+// }
+// // multipleGreet(greet,10)
+// multipleGreet(function(){console.log("namaste")},10)
+
+const calculator={
+    add: function(a,b){
+        return a+b
+    },
+    multipliation: function(a,b){
+        return a-b
+    },
+    sub: function(a,b){
+        return a-b
+    }
 }
-calSum(2,3)
-console.log(sum)
+console.log(calculator)
+console.log(calculator.add(2,3))
