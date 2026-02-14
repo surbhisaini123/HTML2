@@ -67,6 +67,24 @@
 // console.log("hello")
 
 // <<<<<<<<<<------------SET INTEREL------------.>>.>.
-setInterval(()=>{
-    console.log("hellll")
+// setInterval(()=>{
+//     console.log("hellll")
+// },2000)
+
+// <<<<<<<<<--------PRACCTICE QUESTION---------->>>>>>>
+
+// const square=n =>(
+//     n*n
+// );
+// console.log(square(5))
+
+
+let id=setInterval(()=>{
+     console.log("hello world")
 },2000)
+setTimeout(()=>{
+    clearInterval(id)
+},10000)
+
+
+   
