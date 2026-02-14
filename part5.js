@@ -174,19 +174,19 @@
 // }
 // Q4)
 // let str=
-let count=0
-let vowels="aeiou"
-function vowelsToSearch(str){
-    for(let i=0;i<str.length;i++){
-        if(vowels.includes(str[i])){
-        //   return count++
-            // console.log(count)
-              count++
-        }
+// let count=0
+// let vowels="aeiou"
+// function vowelsToSearch(str){
+//     for(let i=0;i<str.length;i++){
+//         if(vowels.includes(str[i])){
+//         //   return count++
+//             // console.log(count)
+//               count++
+//         }
         
-    }
-    console.log(count)
-}
+//     }
+//     console.log(count)
+// }
 
 
-vowelsToSearch("ajortuge")
+// vowelsToSearch("ajortuge")
