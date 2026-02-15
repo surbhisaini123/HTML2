@@ -96,12 +96,40 @@
 
 //,,<<<<<<<<,------------MMAX IN ARRAY----------->>..
 
-let arr=[1,2,4,6,9,3,21,31]
-let ans=arr.reduce((max,el)=>{
-    if(max<el){
-        return el
-    }else{
-        return max
-    }
-})
-console.log(ans)
+// let arr=[1,2,4,6,9,3,21,31]
+// let ans=arr.reduce((max,el)=>{
+//     if(max<el){
+//         return el
+//     }else{
+//         return max
+//     }
+// })
+// console.log(ans)
+//<<<<,<----------PRACTICE QUESTION ------------>>>>>>>
+// let arr=[10,20,30,40,]
+// let multiple=arr.every((el)=>{
+//     return el%10==0
+// })
+// console.log(multiple)
+// let arr=[6,3,6,7,9]
+// let ans=arr.reduce((min,el)=>{
+//     if(min>el){
+//         return el
+//     }else{
+//         return min
+//     }
+// })
+// console.log(ans) 
+
+// <,<<<<--------default parameter-------------->>>>>>>>>>>>
+// function sum(a,b=6){
+//     return a+b
+// }
+// console.log(sum(2))
+
+//<<<<<------------SPREAD------------>>>>>>>>
+
+let arr=[1,2,3,4,5,6,8,66,7,5,23,2,2]
+console.log(...arr)
+let str="surbhi saini "
+console.log(...str)
