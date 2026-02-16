@@ -129,7 +129,15 @@
 
 //<<<<<------------SPREAD------------>>>>>>>>
 
-let arr=[1,2,3,4,5,6,8,66,7,5,23,2,2]
-console.log(...arr)
-let str="surbhi saini "
-console.log(...str)
+// let arr=[1,2,3,4,5,6,8,66,7,5,23,2,2]
+// console.log(...arr)
+// let str="surbhi saini "
+// console.log(...str)
+// <,<<<<------spread object--------.>>>>.
+
+//<,,<<<--------------destrusturing--------------->>>
+let name=["xyz","abc","pqr","lmn","out"]
+let[winner,runnerup,secondrunner,...other]=name
+// console.log(winner)
+// console.log(runnerup)
+console.log(...other)
