@@ -141,21 +141,21 @@
 // // console.log(winner)
 // // console.log(runnerup)
 // console.log(...other)
-let stud={
-    name:"xyz",
-    age:17,
-    cladd:9,
-    sub:["hindi","eng","math"],
-    username:"xyz@123",
-    password:1234,
-    city:"goa"
-}
-// let username=stud.name
-// let password=stud.password
+// let stud={
+//     name:"xyz",
+//     age:17,
+//     cladd:9,
+//     sub:["hindi","eng","math"],
+//     username:"xyz@123",
+//     password:1234,
+//     city:"goa"
+// }
+// // let username=stud.name
+// // let password=stud.password
 
-// let {username,password}=stud
-// console.log(username)
-let{username:user,password,city:place="mumbai"}=stud
-console.log(user)
-// console.log(city)
-console.log(place)
+// // let {username,password}=stud
+// // console.log(username)
+// let{username:user,password,city:place="mumbai"}=stud
+// console.log(user)
+// // console.log(city)
+// console.log(place)
