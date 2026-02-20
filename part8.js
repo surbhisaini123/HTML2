@@ -17,4 +17,13 @@
 // console.log(div1)
 // console.log(document.querySelector("div").innerText="abcd")/
 // console.log(document.querySelector("div").innerHTML="<p> inner paharagraph</p>")
-console.log(document.querySelector("div").innerHTML="<i>new heading</i>")
+// console.log(document.querySelector("div").innerHTML="<i>new heading</i>")
+// let div=document.querySelector('div')
+// console.log(div)
+// // let id=div.getAttribute('id')
+// // console.log(id)
+// let id1=div.setAttribute('id','new-id')
+// console.log(id1)
+
+let div=document.querySelector('div')
+div.append(button)
