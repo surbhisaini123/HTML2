@@ -25,5 +25,5 @@
 // let id1=div.setAttribute('id','new-id')
 // console.log(id1)
 
-let div=document.querySelector('div')
-div.append(button)
+// let div=document.querySelector('div')
+// div.append(button)
