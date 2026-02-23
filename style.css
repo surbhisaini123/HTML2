@@ -1,4 +1,4 @@
-body{
+/* body{
     text-align: center;
 }
 
@@ -8,4 +8,10 @@ div{
     margin:  auto;
     width: 300px;
     
+} */
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    border: 1px solid black;
 }
