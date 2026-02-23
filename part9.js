@@ -68,10 +68,70 @@
 //     console.log("mouse inside")
 // })
 // <<<<<<<<<<<<<<<<-------"THIS" IN EVENT LISTENER------->>>>>>>
-let paharagraph=document.querySelector("p")
-paharagraph.addEventListener("click",function(){
-    console.log(this.innerText)
-    // console.dir(this)
-    this.style.backgroundColor="blue"
-    this.style.textColor="pink"
-})
+// let paharagraph=document.querySelector("p")
+// paharagraph.addEventListener("click",function(){
+//     console.log(this.innerText)
+//     // console.dir(this)
+//     this.style.backgroundColor="blue"
+    
+// })
+// let paharagraph=document.querySelector("p")
+// let div=document.querySelector("div")
+// let h2=document.querySelector("h2")
+// let btn=document.querySelector("button")
+// function changeColor(){
+//     console.log(this.innerText)
+//     this.style.backgroundColor="pink"
+
+// }
+// paharagraph.addEventListener("click",changeColor)
+
+// div.addEventListener("click",changeColor)
+
+// h2.addEventListener("click",changeColor)
+
+// btn.addEventListener("click",changeColor)
+
+// <<<<<<<<<<<<<<<<<<------KEYBOARD EVENT------------------>>>>>>>>>>>>
+
+// let inp=document.querySelector("input")
+// inp.addEventListener("keydown",function(event){
+//     console.log("code=",event.code)
+//     if(event.code =="ArrowUp"){
+//         console.log("obj move forword")
+
+//     }else if(event.code =="ArrowDown"){
+//         console.log("obj move backward")
+
+//     }else if(event.code =="ArrowLeft"){
+//         console.log("obj move left")
+
+//     }else if(event.code =="ArrowRight"){
+//         console.log("obj move right")
+//     }
+// });
+// inp.addEventListener("keydown",function(event){
+//     console.log("key=",event.key)
+//      console.log("code=",event.code)
+//     console.log("key was press")
+// })
+// inp.addEventListener("keyup",function(){
+//     console.log("key was releas")
+// })
+
+let inp=document.querySelector("input")
+inp.addEventListener("keydown",function(event){
+    console.log("code=",event.code)
+    if(event.code =="KeyU"){
+        console.log("obj move Up")
+
+    }else if(event.code =="KeyD"){
+        console.log("obj move down")
+
+    }else if(event.code =="KeyL"){
+        console.log("obj move left")
+
+    }else if(event.code =="KeyR"){
+        console.log("obj move right")
+    }
+});
