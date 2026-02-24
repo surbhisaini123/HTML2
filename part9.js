@@ -119,19 +119,27 @@
 //     console.log("key was releas")
 // })
 
-let inp=document.querySelector("input")
-inp.addEventListener("keydown",function(event){
-    console.log("code=",event.code)
-    if(event.code =="KeyU"){
-        console.log("obj move Up")
+// <<<<<<<<<<<<<<----------KEYBOARD EVENT----------.>>>>>>>>>>
 
-    }else if(event.code =="KeyD"){
-        console.log("obj move down")
+// let inp=document.querySelector("input")
+// inp.addEventListener("keydown",function(event){
+//     console.log("code=",event.code)
+//     if(event.code =="KeyU"){
+//         console.log("obj move Up")
 
-    }else if(event.code =="KeyL"){
-        console.log("obj move left")
+//     }else if(event.code =="KeyD"){
+//         console.log("obj move down")
 
-    }else if(event.code =="KeyR"){
-        console.log("obj move right")
-    }
-});
+//     }else if(event.code =="KeyL"){
+//         console.log("obj move left")
+
+//     }else if(event.code =="KeyR"){
+//         console.log("obj move right")
+//     }
+// });
+// <<<<<<<<<<<<---FORM EVENT-------->>>>>>>>>>>>
+let form=document.querySelector("form")
+form.addEventListener("submit",function(event){
+    event.preventDefault()
+    console.log("form submited")
+})
