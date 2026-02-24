@@ -138,8 +138,25 @@
 //     }
 // });
 // <<<<<<<<<<<<---FORM EVENT-------->>>>>>>>>>>>
+// let form=document.querySelector("form")
+// form.addEventListener("submit",function(event){
+//     event.preventDefault()
+//     console.log("form submited")
+// })
+// <<<<<<<<<<<<---------EXTACING FORM DATA----->>>>>>>
 let form=document.querySelector("form")
 form.addEventListener("submit",function(event){
     event.preventDefault()
-    console.log("form submited")
+    // let inp=document.querySelector("input")
+    // console.log(inp)
+    // // console.log(inp.innerText)
+    // console.dir(inp)
+    // let user=document.querySelector("#user")
+    // let pass =document.querySelector("#pass")
+    let user=this.elements[0]
+    let pass =this.elements[1]
+    console.log(user.value)
+    console.log(pass.value)
+    alert(`${user.value} is your password ${pass.value} is set`)
+
 })
