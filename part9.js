@@ -144,19 +144,36 @@
 //     console.log("form submited")
 // })
 // <<<<<<<<<<<<---------EXTACING FORM DATA----->>>>>>>
-let form=document.querySelector("form")
-form.addEventListener("submit",function(event){
-    event.preventDefault()
-    // let inp=document.querySelector("input")
-    // console.log(inp)
-    // // console.log(inp.innerText)
-    // console.dir(inp)
-    // let user=document.querySelector("#user")
-    // let pass =document.querySelector("#pass")
-    let user=this.elements[0]
-    let pass =this.elements[1]
-    console.log(user.value)
-    console.log(pass.value)
-    alert(`${user.value} is your password ${pass.value} is set`)
+// let form=document.querySelector("form")
+// form.addEventListener("submit",function(event){
+//     event.preventDefault()
+//     // let inp=document.querySelector("input")
+//     // console.log(inp)
+//     // // console.log(inp.innerText)
+//     // console.dir(inp)
+//     // let user=document.querySelector("#user")
+//     // let pass =document.querySelector("#pass")
+//     let user=this.elements[0]
+//     let pass =this.elements[1]
+//     console.log(user.value)
+//     console.log(pass.value)
+//     alert(`${user.value} is your password ${pass.value} is set`)
 
+// })
+
+// <<<<<<<<-----EVENT BUBLING-------->>>>>>>>>
+let div=document.querySelector("div")
+let ul=document.querySelector("ul")
+let li=document.querySelector("li")
+
+div.addEventListener("click",function(){
+    console.log("div is clicked")
+})
+ul.addEventListener("click",function(event){
+    event.stopPropagation()
+    console.log("ul is clicked")
+})
+li.addEventListener("click",function(event){
+    event.stopPropagation()
+    console.log("li is clicked")
 })
