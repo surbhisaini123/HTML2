@@ -189,7 +189,7 @@ btn.addEventListener("click",function(){
     item.innerText=inp.value
 
     let delbtn=document.querySelector("button")
-    delbtn.innerText="✖️"
+    delbtn.innerText="delete"
     delbtn.classList.add("delete")
     item.appendChild(delbtn)
     ul.appendChild(item)
@@ -197,12 +197,12 @@ btn.addEventListener("click",function(){
     
   
 })
-let btns=document.querySelectorAll(".delete")
-    for(delbtn of btns){
+let delbtns=document.querySelectorAll(".delete")
+for(delbtn of delbtns){
         delbtn.addEventListener("click",function(){
             // console.log("button was delete")
             let par=this.parentElement
             console.log(par)
             par.remove()
         })
-    }
+}
