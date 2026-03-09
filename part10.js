@@ -1,12 +1,25 @@
 // <<<<<<<<<<<<-------CALL STACK------->>>>>>>>>
-function hello(){
-    console.log("inside hello func")
-    console.log("hello")
+// function hello(){
+//     console.log("inside hello func")
+//     console.log("hello")
+// }
+// function demo(){
+//     console.log("calling hello func")
+//     hello()
+// }
+// console.log("calling demo func")
+// demo()
+// console.log("done,byy")
+
+// <<<<-----visulization call stack------>>>>>>>>>
+function one(){
+    return 1
 }
-function demo(){
-    console.log("calling hello func")
-    hello()
+function two(){
+    return one()+one()
 }
-console.log("calling demo func")
-demo()
-console.log("done,byy")
+function three(){
+    let ans=two()+one()
+    console.log(ans)
+}
+three()
