@@ -23,4 +23,3 @@ function three(){
     console.log(ans)
 }
 three()
-// dsfds
