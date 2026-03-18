@@ -92,7 +92,7 @@ savetoDb(
 
             },
             ()=>{
-                console.log("failure2 weak connection")
+                console.log("failure2 weak connkection")
             }
          )
         },
