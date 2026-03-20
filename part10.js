@@ -103,19 +103,150 @@
 // )
 
 // <<<<<<<<<<<<<<<--------------PROMISH-------------->>>>>>>>
- function savetoDb(data){
-    return new Promise((succes,failure)=>{
-         let internetSpeed=Math.floor(Math.random() * 10)+1
-         if(internetSpeed > 4){
-            succes("sucess: data was saved")
-         }else{
-           failure("failure: weak connection")
-        }
-    })
+//  function savetoDb(data){
+//     return new Promise((succes,failure)=>{
+//          let internetSpeed=Math.floor(Math.random() * 10)+1
+//          if(internetSpeed > 4){
+//             succes("sucess: data was saved")
+//          }else{
+//            failure("failure: weak connection")
+//         }
+//     })
    
+   
+// }
+// let A=savetoDb("surbhi")
+// console.log(A)
+// let A1=savetoDb("surbhi")
+// console.log(A1)
+
+// <<<<,<<-------then() and catch()
+// function savetoDb(data){
+//     return new Promise((succes,failure)=>{
+//          let internetSpeed=Math.floor(Math.random() * 10)+1
+//          if(internetSpeed > 4){
+//             succes("sucess: data was saved")
+//          }else{
+//            failure("failure: weak connection")
+//         }
+//     })
+   
+   
+// }
+// let request=savetoDb("surbhi")
+// request.then(()=>{
+//     console.log("promish was resolved")
+// })
+// .catch(()=>{
+//     console.log("promish was rejected")
+// })
+// improveent way
+// savetoDb("surbhi").then(()=>{
+//     console.log("promish was resolved")
+// })
+// .catch(()=>{
+//     console.log("promish was rejected")
+// })
+
+// <<<<<<<<<<<-------PROMISH CHANING----------->>>>>>>>>>>
+// function savetoDb(data){
+//     return new Promise((succes,failure)=>{
+//          let internetSpeed=Math.floor(Math.random() * 10)+1
+//          if(internetSpeed > 4){
+//             succes("sucess: data was saved")
+//          }else{
+//            failure("failure: weak connection")
+//         }
+//     })
+// }
+
+// savetoDb("surbhi").then(()=>{
+//     console.log("data1 saved")
+//  savetoDb("khushi").then(()=>{
+//         console.log("data2 savved")
+//     })
+// })
+// .catch(()=>{
+//     console.log("promish was rejected")
+// })
+
+// improved version
+// function savetoDb(data){
+//     return new Promise((succes,failure)=>{
+//          let internetSpeed=Math.floor(Math.random() * 10)+1
+//          if(internetSpeed > 4){
+//             succes("sucess: data was saved")
+//          }else{
+//            failure("failure: weak connection")
+//         }
+//     })
+// }
+
+// savetoDb("surbhi").then(()=>{
+//     console.log("data1 saved")
+//       return savetoDb("khushi")
+// })
+// .then(()=>{
+//         console.log("data2 savved")
+//         return savetoDb("helooooooo")
+//     })
+// .then(()=>{
+//     console.log("data3 saved")
+// })
+// .catch(()=>{
+//     console.log("promish was rejected")
+// })
+
+// <<<<<<<<<<<-------RESULT AND ERROR-------->.>>>>
+// function savetoDb(data){
+//     return new Promise((succes,failure)=>{
+//          let internetSpeed=Math.floor(Math.random() * 10)+1
+//          if(internetSpeed > 4){
+//             succes("sucess: data was saved")
+//          }else{
+//            failure("failure: weak connection")
+//         }
+//     })
+// }
+
+// savetoDb("surbhi").then((result)=>{
+//     console.log("data1 saved")
+//     console.log("results of prmise:",result)
+//       return savetoDb("khushi")
+// })
+// .then((result)=>{
+//         console.log("data2 savved")
+//          console.log("results of prmise:",result)
+//         return savetoDb("helooooooo")
+//     })
+// .then((result)=>{
+//     console.log("data3 saved")
+//      console.log("results of prmise:",result)
+// })
+// .catch((error)=>{
+//     console.log("promish was rejected")
+//      console.log("error of prmise:",error)
+// })
+
+
+// refatoring old code
+ h1=document.querySelector("h1")
+function changeColor(color,delay){
+    return new Promise((resolve,rejected)=>{
+        setTimeout(()=>{
+   h1.style.color=color
+   resolve("color change")
+   
+},delay)
+
+    })
+
    
 }
-let A=savetoDb("surbhi")
-console.log(A)
-let A1=savetoDb("surbhi")
-console.log(A1)
+ changeColor("red",1000).then(()=>{
+        console.log("red color was complete")
+        return changeColor("blue",1000)
+    })
+   .then(()=>{
+    console.log("orange color was ccomplete")
+   })
