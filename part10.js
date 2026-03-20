@@ -63,42 +63,59 @@
 //         console.log('weak onnetion')
 //     }
 // }
-// 2nd method
-function savetoDb(data,succes,failure){
-    let internetSpeed=Math.floor(Math.random() * 10)+1
-    if(internetSpeed > 4){
-        succes()
-    }else{
-        failure()
-    }
+// 2nd method call back 
+// function savetoDb(data,succes,failure){
+//     let internetSpeed=Math.floor(Math.random() * 10)+1
+//     if(internetSpeed > 4){
+//         succes()
+//     }else{
+//         failure()
+//     }
+// }
+// savetoDb(
+//     "hello",
+//     ()=>{
+//          console.log(" success :your data was saved")
+//          savetoDb(
+//             "surbhi",
+//             ()=>{
+//                 console.log("succes2 data2 was saved")
+//                 savetoDb(
+//                     'khushi',
+//                     ()=>{
+//                         console.log("succes3 data was saved")
+//                     },
+//                     ()=>{
+//                         console.log("failure3 weak onnection")
+//                     }
+//                 )
+
+//             },
+//             ()=>{
+//                 console.log("failure2 weak connkection")
+//             }
+//          )
+//         },
+//     ()=>{
+//         console.log('failure:weak onnetion')
+
+//     }
+// )
+
+// <<<<<<<<<<<<<<<--------------PROMISH-------------->>>>>>>>
+ function savetoDb(data){
+    return new Promise((succes,failure)=>{
+         let internetSpeed=Math.floor(Math.random() * 10)+1
+         if(internetSpeed > 4){
+            succes("sucess: data was saved")
+         }else{
+           failure("failure: weak connection")
+        }
+    })
+   
+   
 }
-savetoDb(
-    "hello",
-    ()=>{
-         console.log(" success :your data was saved")
-         savetoDb(
-            "surbhi",
-            ()=>{
-                console.log("succes2 data2 was saved")
-                savetoDb(
-                    'khushi',
-                    ()=>{
-                        console.log("succes3 data was saved")
-                    },
-                    ()=>{
-                        console.log("failure3 weak onnection")
-                    }
-                )
-
-            },
-            ()=>{
-                console.log("failure2 weak connkection")
-            }
-         )
-        },
-    ()=>{
-        console.log('failure:weak onnetion')
-
-    }
-)
-// wsa
+let A=savetoDb("surbhi")
+console.log(A)
+let A1=savetoDb("surbhi")
+console.log(A1)
