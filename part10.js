@@ -230,23 +230,23 @@
 
 
 // refatoring old code
- h1=document.querySelector("h1")
-function changeColor(color,delay){
-    return new Promise((resolve,rejected)=>{
-        setTimeout(()=>{
-   h1.style.color=color
-   resolve("color change")
+//  h1=document.querySelector("h1")
+// function changeColor(color,delay){
+//     return new Promise((resolve,rejected)=>{
+//         setTimeout(()=>{
+//    h1.style.color=color
+//    resolve("color change")
    
-},delay)
+// },delay)
 
-    })
+//     })
 
    
-}
- changeColor("red",1000).then(()=>{
-        console.log("red color was complete")
-        return changeColor("blue",1000)
-    })
-   .then(()=>{
-    console.log("orange color was ccomplete")
-   })
+// }
+//  changeColor("red",1000).then(()=>{
+//         console.log("red color was complete")
+//         return changeColor("blue",1000)
+//     })
+//    .then(()=>{
+//     console.log("orange color was ccomplete")
+//    })
