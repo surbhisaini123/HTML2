@@ -137,30 +137,30 @@
 //  })
 
 // <<<<<<<<<<<<---------FETCH USING WITH AWAIT ASYNC--------->>>>>>>>
-let url="https://catfact.ninja/fact"
+// let url="https://catfact.ninja/fact"
 
-async function getFacts(){
-    try{
-        let res1= await fetch(url)
-    let data1 =await res1.json()
-    console.log(data1.fact)
-console.log("-------------------------")
-     let res2= await fetch(url)
-    let data2 =await res2.json()
-    console.log(data2.fact)
-console.log("-------------------------")
-     let res3= await fetch(url)
-    let data3 =await res3.json()
-    console.log(data3.fact)
-    console.log("-------------------------")
+// async function getFacts(){
+//     try{
+//         let res1= await fetch(url)
+//     let data1 =await res1.json()
+//     console.log(data1.fact)
+// console.log("-------------------------")
+//      let res2= await fetch(url)
+//     let data2 =await res2.json()
+//     console.log(data2.fact)
+// console.log("-------------------------")
+//      let res3= await fetch(url)
+//     let data3 =await res3.json()
+//     console.log(data3.fact)
+//     console.log("-------------------------")
 
-    } catch(e){
-        console.log("errrrrrrrrrr---------",e)
+//     } catch(e){
+//         console.log("errrrrrrrrrr---------",e)
 
-    }
+//     }
     
 
 
-    console.log("hiiii")
+//     console.log("hiiii")
 
-}
+// }
