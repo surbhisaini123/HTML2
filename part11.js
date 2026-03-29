@@ -78,19 +78,89 @@
 // kdesd
 
 // <<<<<<<<<<<<<<<<----------API------->>>>>>>>>>
-let JSONres=
-'{"fact":"Tylenol and chocolate are both poisionous to cats.","length":50}'
-// console.log(JSONres.fact)
-let validRes=JSON.parse(JSONres)
-console.log(validRes)
-console.log(validRes.fact)
-console.log(validRes.length)
+// <<<<<<<<-------STRING CONVERT INTO JSON------->>>>>>>>
+// let JSONres=
+// '{"fact":"Tylenol and chocolate are both poisionous to cats.","length":50}'
+// // console.log(JSONres.fact)
+// let validRes=JSON.parse(JSONres)
+// console.log(validRes)
+// console.log(validRes.fact)
+// console.log(validRes.length)
 
-let student={
-    name:"surbhi",
-    age:19,
-    marks:90
-};
-// console.log(student)
+// // <<<<<<<<-------JSON CONVERT INTO STRING------->>>>>>>>
+// let student={
+//     name:"surbhi",
+//     age:19,
+//     marks:90
+// }
+// // console.log(student)
 // let jsonData=JSON.stringify(student)
-console.log(JSON.stringify(student))
+// console.log(jsonData)
+
+// <<<<<<<<<<---------OUR FIRST REQUEST------->>>>>>>>>
+// <<<<<<<<<<------ONLY ONE REQUEST------->>>>>>>>>>
+// let url="https://catfact.ninja/fact"
+// fetch(url)
+// .then((response)=>{
+//     console.log(response)
+//     return response.json()
+//     // console.log(response.json())
+//     // response.json().then((data)=>{
+//     //     console.log(data)
+//     // })
+// })
+// .then((data)=>{
+//     // console.log(data)
+//      console.log(data.fact)
+// })
+// .catch((err)=>{
+//     console.log("ERROR-",err)
+// })
+// <<<<<<<<<<-----------MORE THAN ONE REQUEST---------->>>>>>>>>>>
+//  let url="https://catfact.ninja/fact"
+//  fetch(url)
+//  .then((res)=>{
+//     return res.json()
+//  })
+//  .then((data1)=>{
+//     console.log("data1-----",data1.fact)
+//     return fetch(url)
+//  })
+//  .then((res)=>{
+//     return res.json()
+//  })
+//  .then((data2)=>{
+//     console.log("data2-----",data2.fact)
+//  })
+//  .catch((err)=>{
+//     console.log("ERROR--",err)
+//  })
+
+// <<<<<<<<<<<<---------FETCH USING WITH AWAIT ASYNC--------->>>>>>>>
+let url="https://catfact.ninja/fact"
+
+async function getFacts(){
+    try{
+        let res1= await fetch(url)
+    let data1 =await res1.json()
+    console.log(data1.fact)
+console.log("-------------------------")
+     let res2= await fetch(url)
+    let data2 =await res2.json()
+    console.log(data2.fact)
+console.log("-------------------------")
+     let res3= await fetch(url)
+    let data3 =await res3.json()
+    console.log(data3.fact)
+    console.log("-------------------------")
+
+    } catch(e){
+        console.log("errrrrrrrrrr---------",e)
+
+    }
+    
+
+
+    console.log("hiiii")
+
+}
